@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flask MinIO Example</title>
+</head>
+<body>
+    <h1>Upload a file to MinIO</h1>
+    <form method="POST" action="/upload" enctype="multipart/form-data">
+        <input type="file" name="file">
+        <input type="submit" value="Upload">
+    </form>
+    <hr>
+    <h1>Download a file from MinIO</h1>
+    <form method="GET" action="/download">
+        <input type="text" name="filename">
+        <input type="submit" value="Download">
+    </form>
+</body>
+</html>
